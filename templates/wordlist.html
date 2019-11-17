@@ -1,9 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
+<div id="definition_box">
+  <div id="definition_close">
+    <button type="button" id="close_button" onclick="close_def()">close</button>
+  </div>
+  <h2 id="definition_title">
+    Default Title
+  </h2>
+  <div id="definition_text">
+    Default Text
+  </div>
+</div>
 <main>
     {% for word in wordlist: %}
-        <div class="wordbox">{{ word }}</div>
+        <div class="wordbox" onclick="open_def(this)">{{ word }}</div>
     {% endfor %}
 </main>
 {% endblock %}

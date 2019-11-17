@@ -8,5 +8,44 @@ main {
     text-align: center;
     border: solid white;
     margin: 3px;
+    z-index: 1;
 
+}
+
+nav {
+  background-color:#b0b0df;
+  text-align: center;
+}
+
+footer {
+  margin: 15px;
+  background-color:#b0b0df;
+  text-align: center;
+}
+
+#definition_box {
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  margin: 5% 25%;
+  z-index: 2;
+  background-color: lightsteelblue;
+  display: none;
+  border-style: outset;
+  border-color: #b0b0de;
+  border-width: thick;
+  overflow: auto;
+}
+
+#definition_close{
+  position: absolute;
+  display: inline;
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+#close_button {
+ float: right;
+ z-index: 3;
 }

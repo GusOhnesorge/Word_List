@@ -1,6 +1,8 @@
 <html>
     <head>
-        <meta charset="utf-8">
+        <script src="/static/functions.js"></script>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta charset="utf-8" http-equiv="encoding">
         <link rel="stylesheet" href="/static/wordstyle.css">
     </head>
     <body>
@@ -9,9 +11,13 @@
             <h1>Word List Program for {{name}}</h1>
         </nav>
         {% endblock %}
-
         {% block content %}
         default content
+        {% endblock %}
+        {% block footer %}
+        <footer>
+            <a href="https://github.com/GusOhnesorge/Word_List"> My Github </a>
+        </footer>
         {% endblock %}
     </body>
 </html>
